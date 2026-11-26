@@ -1,0 +1,65 @@
+{
+  "id": "2026-11-26-a-q12",
+  "student": "jiangjh",
+  "date": "2026-11-26",
+  "grade": "七年级上",
+  "subject": "数学",
+  "source": "期中检测卷(二) · 第12题",
+  "chapter": "整式及其加减",
+  "title": "“燕几”拼桌面周长（列代数式）",
+  "question": "【选材新风向·“燕几”】“燕几”由两张同款长桌、两张同款中桌、三张同款小桌构成，七张桌面皆为长方形，桌宽均为 $x$ 尺。如图，将“燕几”拼成一个“回文”造型桌面，该桌面的周长为 ____ 尺。（用含 $x$ 的代数式表示）",
+  "svg": "<svg viewBox=\"0 0 210 220\" width=\"210\" height=\"220\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"36\" height=\"144\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"56\" y=\"20\" width=\"108\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"128\" y=\"56\" width=\"36\" height=\"144\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"164\" width=\"108\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"56\" y=\"56\" width=\"72\" height=\"36\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"56\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"92\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"169\" y1=\"20\" x2=\"186\" y2=\"20\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"169\" y1=\"56\" x2=\"186\" y2=\"56\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"178\" y1=\"22\" x2=\"178\" y2=\"54\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"178,20 175,26 181,26\" fill=\"#334155\"/><polygon points=\"178,56 175,50 181,50\" fill=\"#334155\"/><text x=\"189\" y=\"42\" font-size=\"13\" font-style=\"italic\" fill=\"#0f172a\">x</text></svg>",
+  "wrong_answer": "$20x$",
+  "mistake": {
+    "type": "审题与数形结合偏差",
+    "description": "未能正确数出“回文”造型外围大长方形的长和宽所包含的桌宽 $x$ 的段数，误写成 $20x$ 尺（正确答案应为 $18x$ 尺）。"
+  },
+  "answer_mode": "short_answer",
+  "accepted_answers": ["18x", "18x尺"],
+  "solution": {
+    "thinking_procedure": [
+      {
+        "text": "1. 观察图形中各桌面的长宽关系：小桌宽为 $x$，由中间两张竖放小桌与上方横放小桌对齐可知，小桌长为 $2x$；同理可得中桌长为 $3x$，长桌长为 $4x$。",
+        "svg": "<svg viewBox=\"0 0 190 215\" width=\"170\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"36\" height=\"144\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"20\" width=\"108\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.4\"/><rect x=\"128\" y=\"56\" width=\"36\" height=\"144\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"164\" width=\"108\" height=\"36\" fill=\"#e2e8f0\" stroke=\"#64748b\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"56\" width=\"72\" height=\"36\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"56\" y=\"92\" width=\"36\" height=\"72\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"92\" y=\"92\" width=\"36\" height=\"72\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><text x=\"92\" y=\"78\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">2x</text><text x=\"74\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">x</text><text x=\"110\" y=\"132\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">x</text></svg>"
+      },
+      {
+        "text": "2. 计算外围大长方形的宽：左长桌宽 $x$ $+$ 上中桌长 $3x = 4x$。",
+        "svg": "<svg viewBox=\"0 0 190 215\" width=\"170\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"36\" height=\"144\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\"/><rect x=\"56\" y=\"20\" width=\"108\" height=\"36\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"/><rect x=\"128\" y=\"56\" width=\"36\" height=\"144\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"164\" width=\"108\" height=\"36\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"56\" width=\"72\" height=\"36\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"56\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"92\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"38\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">x</text><text x=\"110\" y=\"42\" text-anchor=\"middle\" font-size=\"11\" fill=\"#1e40af\">3x</text><text x=\"92\" y=\"14\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\">宽 = 4x</text></svg>"
+      },
+      {
+        "text": "3. 计算外围大长方形的高：左长桌长 $4x$ $+$ 下中桌宽 $x = 5x$。",
+        "svg": "<svg viewBox=\"0 0 190 215\" width=\"170\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"36\" height=\"144\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"2\"/><rect x=\"56\" y=\"20\" width=\"108\" height=\"36\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><rect x=\"128\" y=\"56\" width=\"36\" height=\"144\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"164\" width=\"108\" height=\"36\" fill=\"#fde68a\" stroke=\"#d97706\" stroke-width=\"2\"/><rect x=\"56\" y=\"56\" width=\"72\" height=\"36\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"56\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><rect x=\"92\" y=\"92\" width=\"36\" height=\"72\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"38\" y=\"95\" text-anchor=\"middle\" font-size=\"11\" fill=\"#166534\">4x</text><text x=\"38\" y=\"186\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">x</text></svg>"
+      },
+      {
+        "text": "4. 求周长：$2 \\times (4x + 5x) = 18x$。",
+        "svg": "<svg viewBox=\"0 0 190 215\" width=\"170\" height=\"190\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"144\" height=\"180\" fill=\"#f8fafc\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"92\" y=\"14\" text-anchor=\"middle\" font-size=\"12\" fill=\"#dc2626\">4x</text><text x=\"176\" y=\"114\" text-anchor=\"middle\" font-size=\"12\" fill=\"#dc2626\">5x</text><text x=\"92\" y=\"114\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\">周长 = 18x</text></svg>"
+      }
+    ],
+    "explanation": "由拼接图可得：小桌长为 $2x$，中桌长为 $3x$，长桌长为 $4x$。外围大长方形的宽为 $x + 3x = 4x$，长为 $4x + x = 5x$，因此周长为 $2(4x + 5x) = 18x$ 尺。",
+    "answer": "$18x$"
+  },
+  "similar_questions": [
+    {
+      "id": "sim-a-q12-1",
+      "question": "用 $4$ 个完全相同的小长方形（宽为 $x$，长为 $y$）拼成一个大正方形，中间留有一个小正方形镂空（如图）。大正方形的周长用含 $x, y$ 的代数式表示为？",
+      "svg": "<svg viewBox=\"0 0 180 190\" width=\"170\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"36\" width=\"90\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"110\" y=\"36\" width=\"40\" height=\"90\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"60\" y=\"126\" width=\"90\" height=\"40\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"76\" width=\"40\" height=\"90\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"60\" y=\"76\" width=\"50\" height=\"50\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"20\" y1=\"18\" x2=\"20\" y2=\"32\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"110\" y1=\"18\" x2=\"110\" y2=\"32\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"22\" y1=\"25\" x2=\"108\" y2=\"25\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"20,25 26,22 26,28\" fill=\"#334155\"/><polygon points=\"110,25 104,22 104,28\" fill=\"#334155\"/><text x=\"65\" y=\"15\" text-anchor=\"middle\" font-size=\"13\" font-style=\"italic\" fill=\"#0f172a\">y</text><line x1=\"150\" y1=\"18\" x2=\"150\" y2=\"32\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"112\" y1=\"25\" x2=\"148\" y2=\"25\" stroke=\"#334155\" stroke-width=\"1.2\"/><polygon points=\"110,25 116,22 116,28\" fill=\"#334155\"/><polygon points=\"150,25 144,22 144,28\" fill=\"#334155\"/><text x=\"130\" y=\"15\" text-anchor=\"middle\" font-size=\"13\" font-style=\"italic\" fill=\"#0f172a\">x</text></svg>",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["4(x+y)", "4x+4y"],
+      "strategy_steps": [
+        {
+          "prompt": "第一步：要求大正方形的周长，最关键的是先确定什么？",
+          "options": ["大正方形的边长与 $x, y$ 的关系", "中间小正方形的面积", "一个小长方形的面积"],
+          "correct_index": 0,
+          "feedback": "正方形周长 $= 4 \\times$ 边长，观察图形可知大正方形的边长等于小长方形的长与宽之和，即 $x+y$。"
+        },
+        {
+          "prompt": "第二步：确定边长为 $x+y$ 后，如何表示大正方形的周长？",
+          "options": ["$4(x+y)$ 或 $4x+4y$", "$(x+y)^2$", "$2(x+y)$"],
+          "correct_index": 0,
+          "feedback": "周长为 $4 \\times (x+y) = 4x+4y$。"
+        }
+      ],
+      "answer": "$4x+4y$（或 $4(x+y)$）"
+    }
+  ]
+}

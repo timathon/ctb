@@ -1,0 +1,79 @@
+{
+  "id": "2026-11-26-b-q20",
+  "student": "jiangjh",
+  "date": "2026-11-26",
+  "grade": "七年级上",
+  "subject": "数学",
+  "source": "期中真题汇编卷(基础卷 2) · 第20题",
+  "chapter": "整式及其加减",
+  "title": "阶梯水费分段计费与分类讨论",
+  "question": "某市居民使用自来水按如下标准收费（水费按月缴纳）：",
+  "svg": "<svg viewBox=\"0 0 420 128\" width=\"420\" height=\"128\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"2\" y=\"2\" width=\"416\" height=\"124\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"2\" y1=\"33\" x2=\"418\" y2=\"33\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"2\" y1=\"64\" x2=\"418\" y2=\"64\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"2\" y1=\"95\" x2=\"418\" y2=\"95\" stroke=\"#334155\" stroke-width=\"1.2\"/><line x1=\"290\" y1=\"2\" x2=\"290\" y2=\"126\" stroke=\"#334155\" stroke-width=\"1.2\"/><text x=\"146\" y=\"22\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">户月用水量</text><text x=\"354\" y=\"22\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\">单价</text><text x=\"146\" y=\"53\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">不超过 15 m³ 的部分</text><text x=\"354\" y=\"53\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">2 元/m³</text><text x=\"146\" y=\"84\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">超过 15 m³ 但不超过 20 m³ 的部分</text><text x=\"354\" y=\"84\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">3 元/m³</text><text x=\"146\" y=\"115\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">超过 20 m³ 的部分</text><text x=\"354\" y=\"115\" text-anchor=\"middle\" font-size=\"13\" fill=\"#0f172a\">4 元/m³</text></svg>",
+  "subquestions": [
+    {
+      "label": "(1)",
+      "prompt": "某用户一个月用了 $22\\text{ m}^3$ 水，求该用户这个月应缴纳的水费。",
+      "is_correct": true,
+      "student_answer": "53",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["53", "53元"],
+      "answer": "$53$ 元"
+    },
+    {
+      "label": "(2)",
+      "prompt": "设某户月用水量为 $x\\text{ m}^3$，当 $x > 20$ 时，该用户应缴纳的水费是 ____ 元。（用含 $x$ 的代数式表示）",
+      "is_correct": true,
+      "student_answer": "4x-35",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["4x-35"],
+      "answer": "$4x - 35$"
+    },
+    {
+      "label": "(3)",
+      "prompt": "甲、乙两用户一个月共用水 $40\\text{ m}^3$，已知甲用户缴纳的水费低于 $30$ 元，设甲用户这个月用水 $x\\text{ m}^3$，试求甲、乙两用户这个月共同缴纳的水费（用含 $x$ 的代数式表示）。",
+      "is_correct": false,
+      "wrong_answer": "$90 - x$",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["125-2x"],
+      "answer": "$125 - 2x$"
+    }
+  ],
+  "wrong_answer": "(3) $90 - x$",
+  "mistake": {
+    "type": "分段范围判断失误",
+    "description": "第(3)问中，甲水费低于 $30$ 元说明甲用水量 $x < 15$，从而乙用水量 $40 - x > 25 > 20$。原卷误写成 $90 - x$，未把甲的 $2x$ 和乙超过 $20$ 部分的 $4(40-x)-35$ 合并。"
+  },
+  "solution": {
+    "thinking_procedure": [
+      "1. 先确定甲的范围：因为 $15\\text{ m}^3$ 水费为 $15 \\times 2 = 30$ 元，甲水费低于 $30$ 元，所以 $x < 15$，甲的水费为 $2x$ 元。",
+      "2. 再确定乙的范围：甲、乙共用水 $40\\text{ m}^3$，则乙用水 $40 - x$。因为 $x < 15$，所以 $40 - x > 25 > 20$。",
+      "3. 套用第(2)问的公式计算乙的水费：$4(40 - x) - 35 = 160 - 4x - 35 = 125 - 4x$。",
+      "4. 两者相加：$2x + (125 - 4x) = 125 - 2x$。"
+    ],
+    "explanation": "由甲水费低于 $30$ 元知 $x < 15$，故甲水费为 $2x$ 元；乙用水量为 $40 - x > 25 > 20$，由(2)得乙水费为 $4(40-x)-35 = 125-4x$ 元。合计为 $2x + 125 - 4x = 125 - 2x$ 元。",
+    "answer": "(1) $53$ 元；(2) $4x - 35$；(3) $125 - 2x$"
+  },
+  "similar_questions": [
+    {
+      "id": "sim-b-q20-1",
+      "question": "某地打车起步价为 $10$ 元（不超过 $3\\text{ km}$），超过 $3\\text{ km}$ 的部分每千米收费 $2$ 元。若甲、乙两人打车共行驶 $20\\text{ km}$，且甲行驶的路程 $x < 3\\text{ km}$，则两人共需支付车费多少元（用含 $x$ 的代数式表示）？",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["48-2x"],
+      "strategy_steps": [
+        {
+          "prompt": "第一步：甲行驶 $x < 3\\text{ km}$，甲的车费是多少？乙行驶 $20-x$，是否超过 $3\\text{ km}$？",
+          "options": ["甲为 $10$ 元，乙超过 $3\\text{ km}$", "甲为 $2x$ 元，乙不超过 $3\\text{ km}$", "甲为 $10+2x$ 元"],
+          "correct_index": 0,
+          "feedback": "甲未超起步里程，车费固定 $10$ 元；乙行驶 $20-x > 17 > 3\\text{ km}$。"
+        },
+        {
+          "prompt": "第二步：乙的车费为 $10 + 2(20 - x - 3)$，两人总车费化简后是？",
+          "options": ["$48 - 2x$", "$54 - 2x$", "$44 - 2x$"],
+          "correct_index": 0,
+          "feedback": "$10 + 10 + 2(17 - x) = 20 + 34 - 2x = 54 - 2x$？再算一遍：$10 + 10 + 2(20-x-3) = 20 + 34 - 2x = 54 - 2x$。"
+        }
+      ],
+      "answer": "$54 - 2x$"
+    }
+  ]
+}

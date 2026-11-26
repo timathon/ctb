@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-26-b-q22",
+  "student": "jiangjh",
+  "date": "2026-11-26",
+  "grade": "七年级上",
+  "subject": "数学",
+  "source": "期中真题汇编卷(基础卷 2) · 第22题",
+  "chapter": "整式及其加减",
+  "title": "折绳子剪断规律探究",
+  "question": "在北师大版教材七年级上册第三章的学习过程中，曾用过很多次“归纳”的过程，即从几种特殊情形出发，进而找到一般规律的过程。请用归纳策略解答下列问题：",
+  "svg": "<svg viewBox=\"0 0 280 90\" width=\"280\" height=\"90\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 25 20 L 25 65 C 25 75, 45 75, 45 65 L 45 20 C 45 10, 65 10, 65 20 L 65 65\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"15\" y1=\"42\" x2=\"75\" y2=\"42\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><text x=\"45\" y=\"85\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">折3段剪1刀→4段</text><path d=\"M 115 20 L 115 65 C 115 75, 135 75, 135 65 L 135 20 C 135 10, 155 10, 155 20 L 155 65\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"34\" x2=\"165\" y2=\"34\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><line x1=\"105\" y1=\"52\" x2=\"165\" y2=\"52\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><text x=\"135\" y=\"85\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">折3段剪2刀→7段</text><path d=\"M 200 20 L 200 65 C 200 75, 218 75, 218 65 L 218 20 C 218 10, 236 10, 236 20 L 236 65 C 236 75, 254 75, 254 65 L 254 20\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"264\" y2=\"42\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4 2\"/><text x=\"227\" y=\"85\" text-anchor=\"middle\" font-size=\"11\" fill=\"#475569\">折4段剪1刀→5段</text></svg>",
+  "subquestions": [
+    {
+      "label": "(1)",
+      "prompt": "【探究一】将一根绳子折成 $3$ 段，然后按规律剪开：剪 $1$ 刀变为 $4$ 段；剪 $2$ 刀变为 $7$ 段……① 剪 $12$ 刀，绳子变为 ____ 段；② 可能正好剪成 $98$ 段吗？",
+      "is_correct": false,
+      "wrong_answer": "① $37$ 段（正确）；② 漏答",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["37"],
+      "answer": "$37$ 段；不能（$3n+1=98$ 无整数解）"
+    },
+    {
+      "label": "(2)",
+      "prompt": "【探究二】将一根绳子折成 $4$ 段，然后按(1)中的方式剪开：剪 $1$ 刀变为 $5$ 段；剪 $2$ 刀变为 ____ 段；……剪 $n$ 刀，绳子变为 ____ 段。",
+      "is_correct": true,
+      "student_answer": "9；4n+1",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["9；4n+1", "4n+1"],
+      "answer": "$9$ 段；$4n+1$ 段"
+    },
+    {
+      "label": "(3)",
+      "prompt": "【归纳】将一根绳子折成 $m$（$m \\ge 3$）段，然后按(1)中的方式剪 $n$ 刀，绳子变为 ____ 段。（用含 $m, n$ 的代数式表示）",
+      "is_correct": false,
+      "wrong_answer": "$2n - m$",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["mn+1"],
+      "answer": "$mn + 1$"
+    },
+    {
+      "label": "(4)",
+      "prompt": "【问题解决】将一根绳子折成 $m$（$m \\ge 3$）段，然后按(1)中的方式剪 $n$ 刀（$m < n$），绳子变为 $100$ 段，则 $\\frac{m}{n}$ 的值为 ____。",
+      "is_correct": false,
+      "wrong_answer": "未作答",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["1/11或9/11", "9/11或1/11"],
+      "answer": "$\\frac{1}{11}$ 或 $\\frac{9}{11}$（由 $mn+1=100 \\Rightarrow mn=99$，且 $m \\ge 3, m < n$，得 $m=3,n=33$ 或 $m=9,n=11$）"
+    }
+  ],
+  "wrong_answer": "(3) $mn - m$；(4) 未得出 $9$（或 $3$）",
+  "mistake": {
+    "type": "归纳公式与条件限制遗漏",
+    "description": "第(3)问中，每多剪 $1$ 刀增加 $m$ 段，初始为 $1$ 段，应为 $mn+1$（原卷误写成 $mn-m$）；第(4)问中，由 $mn=99$ 且 $m \\ge 3, m < n$ 可得 $m=9, n=11$，注意不要漏掉 $m < n$ 的限制。"
+  },
+  "solution": {
+    "thinking_procedure": [
+      "1. 归纳规律：折成 $m$ 段，每剪 $1$ 刀就会在 $m$ 股绳子上各剪一刀，即每次增加 $m$ 段。剪 $0$ 刀是 $1$ 段，剪 $n$ 刀就是 $mn + 1$ 段。",
+      "2. 第(4)问解方程：$mn + 1 = 100 \\Rightarrow mn = 99$。",
+      "3. 分解 $99$ 的因数：$99 = 1 \\times 99 = 3 \\times 33 = 9 \\times 11$。",
+      "4. 结合条件 $m \\ge 3$ 且 $m < n$，符合条件的 $m$ 可以是 $3$（$n=33$）或 $9$（$n=11$）。"
+    ],
+    "explanation": "(3) 每剪 $1$ 刀增加 $m$ 段，故剪 $n$ 刀共有 $mn + 1$ 段。\n(4) $mn + 1 = 100 \\Rightarrow mn = 99$。因为 $m \\ge 3$ 且 $m < n$，所以 $m=3, n=33$ 或 $m=9, n=11$，从而 $\\frac{m}{n} = \\frac{3}{33} = \\frac{1}{11}$ 或 $\\frac{m}{n} = \\frac{9}{11}$。",
+    "answer": "(3) $mn + 1$；(4) $\\frac{1}{11}$ 或 $\\frac{9}{11}$"
+  },
+  "similar_questions": [
+    {
+      "id": "sim-b-q22-1",
+      "question": "将一根绳子对折 $3$ 次（折成 $8$ 段）后，用剪刀从中间剪 $n$ 刀，绳子共被剪成多少段（用含 $n$ 的代数式表示）？",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["8n+1"],
+      "strategy_steps": [
+        {
+          "prompt": "第一步：每剪 $1$ 刀，会在多少股绳子上剪断，从而增加多少段？",
+          "options": ["增加 $8$ 段", "增加 $3$ 段", "增加 $4$ 段"],
+          "correct_index": 0,
+          "feedback": "折成 $8$ 段，每剪 $1$ 刀就多出 $8$ 段。"
+        },
+        {
+          "prompt": "第二步：剪 $0$ 刀时原来有 $1$ 段，剪 $n$ 刀后共被剪成多少段？",
+          "options": ["$8n + 1$", "$8n$", "$8n - 1$"],
+          "correct_index": 0,
+          "feedback": "原来的 $1$ 段加上剪 $n$ 刀增加的 $8n$ 段，共 $8n + 1$ 段。"
+        }
+      ],
+      "answer": "$8n + 1$"
+    }
+  ]
+}

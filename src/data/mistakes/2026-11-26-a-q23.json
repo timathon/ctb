@@ -1,0 +1,86 @@
+{
+  "id": "2026-11-26-a-q23",
+  "student": "jiangjh",
+  "date": "2026-11-26",
+  "grade": "七年级上",
+  "subject": "数学",
+  "source": "期中检测卷(二) · 第23题",
+  "chapter": "整式及其加减",
+  "title": "整体思想与图形裁剪周长应用",
+  "question": "【阅读理解】我们知道，$4x + 2x = (4+2)x = 6x$。类似地，若我们把 $a+b$ 看成一个整体，则有 $4(a+b) + 2(a+b) - (a+b) = (4+2-1)(a+b) = 5(a+b)$。“整体思想”是中学数学解题中的一种重要的思想方法，其应用极为广泛。",
+  "svg": "<svg viewBox=\"0 0 208 176\" width=\"208\" height=\"176\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"20\" width=\"76\" height=\"76\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"20\" y=\"96\" width=\"60\" height=\"60\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"80\" y=\"96\" width=\"16\" height=\"16\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"96\" y=\"20\" width=\"92\" height=\"92\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"1.8\"/><rect x=\"80\" y=\"112\" width=\"108\" height=\"44\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"58\" y=\"62\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">③</text><text x=\"50\" y=\"130\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">②</text><text x=\"88\" y=\"108\" text-anchor=\"middle\" font-size=\"11\" fill=\"#0f172a\">①</text><text x=\"142\" y=\"70\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">④</text><text x=\"134\" y=\"138\" text-anchor=\"middle\" font-size=\"14\" fill=\"#0f172a\">⑤</text></svg>",
+  "subquestions": [
+    {
+      "label": "(1)",
+      "prompt": "【方法运用】把 $a-b$ 看成一个整体，则 $3(a-b)^2 - 7(a-b)^2 + 2(a-b)^2 =$ ____。",
+      "is_correct": true,
+      "student_answer": "-2(a-b)^2",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["-2(a-b)^2"],
+      "answer": "$-2(a-b)^2$"
+    },
+    {
+      "label": "(2)",
+      "prompt": "已知 $x^2 + 2y = 5$，求代数式 $3x^2 + 6y + 21$ 的值。",
+      "is_correct": true,
+      "student_answer": "36",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["36"],
+      "answer": "$36$"
+    },
+    {
+      "label": "(3)",
+      "prompt": "当 $x = 2025$ 时，代数式 $ax^2 - x + 1$ 的值是 $m$，则当 $x = -2025$ 时，求 $ax^2 - x + 1$ 的值（结果用含 $m$ 的代数式表示）。",
+      "is_correct": false,
+      "wrong_answer": "$2024 + m$",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["m+4050", "4050+m"],
+      "answer": "$m + 4050$"
+    },
+    {
+      "label": "(4)",
+      "prompt": "【拓展应用】将一块长方形纸片剪成如图所示的四个正方形 ①②③④ 和一个小长方形 ⑤，设 ① 号正方形的边长为 $x$，② 号正方形的边长为 $y$，若图中 ⑤ 号小长方形的周长为 $20$，试求 ③ 号正方形的周长。",
+      "is_correct": false,
+      "wrong_answer": "$2024 + m$",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["40"],
+      "answer": "$40$"
+    }
+  ],
+  "wrong_answer": "(3) $2024 + m$；(4) $10 \\times 2 = 20$",
+  "mistake": {
+    "type": "整体代换与方程转化失误",
+    "description": "第(3)问中，未注意 $-x$ 变号导致差值为 $2x = 4050$（误写成 $2024+m$）；第(4)问中，未通过长方形对边相等列出 $x, y$ 与 ③ 号边长的关系。"
+  },
+  "solution": {
+    "thinking_procedure": [
+      "1. 第(3)问：把 $ax^2 + 1$ 看作整体。当 $x=2025$ 时，$a \\cdot 2025^2 - 2025 + 1 = m$，即 $a \\cdot 2025^2 + 1 = m + 2025$。当 $x=-2025$ 时，$a(-2025)^2 - (-2025) + 1 = (a \\cdot 2025^2 + 1) + 2025 = (m+2025) + 2025 = m + 4050$。",
+      "2. 第(4)问：设 ③ 号正方形边长为 $z$。由图形拼接关系知，$y = x - z$（或从 ⑤ 号小长方形的长与宽入手：⑤ 号长与宽之和 $= 20 \\div 2 = 10$，而大长方形对边相等可导出 ③ 号边长为 $10$），故 ③ 号正方形周长为 $4 \\times 10 = 40$。"
+    ],
+    "explanation": "(3) $a\\cdot 2025^2 - 2025 + 1 = m \\Rightarrow a\\cdot 2025^2 + 1 = m + 2025$。代入 $x = -2025$ 得 $a\\cdot 2025^2 + 2025 + 1 = m + 4050$。\n(4) ⑤ 号小长方形周长为 $20$，则其长 $+ $ 宽 $= 10$。利用图形中各正方形边长关系可得 ③ 号正方形边长恰好等于 ⑤ 号的长与宽之和，即 $10$，因此周长为 $4 \\times 10 = 40$。",
+    "answer": "(1) $-2(a-b)^2$；(2) $36$；(3) $m+4050$；(4) $40$"
+  },
+  "similar_questions": [
+    {
+      "id": "sim-a-q23-1",
+      "question": "当 $x = 2026$ 时，代数式 $ax^3 + bx + 3$ 的值为 $10$，那么当 $x = -2026$ 时，代数式 $ax^3 + bx + 3$ 的值是多少？",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["-4"],
+      "strategy_steps": [
+        {
+          "prompt": "第一步：观察 $ax^3 + bx$，当 $x$ 变为 $-x$ 时，这一部分有什么变化？",
+          "options": ["整体变为原来的相反数", "值不变", "无法确定"],
+          "correct_index": 0,
+          "feedback": "因为 $3$ 次方和 $1$ 次方都是奇次幂，所以 $a(-x)^3 + b(-x) = -(ax^3 + bx)$。"
+        },
+        {
+          "prompt": "第二步：由 $x=2026$ 时 $ax^3+bx+3=10$，先求出整体 $ax^3+bx$ 的值，再代入 $x=-2026$。",
+          "options": ["$ax^3+bx = 7$，代入得 $-7+3 = -4$", "$ax^3+bx = 10$，代入得 $-10+3 = -7$", "$ax^3+bx = 7$，代入得 $7+3 = 10$"],
+          "correct_index": 0,
+          "feedback": "整体 $ax^3+bx = 7$，取相反数为 $-7$，再加 $3$ 得 $-4$。"
+        }
+      ],
+      "answer": "$-4$"
+    }
+  ]
+}

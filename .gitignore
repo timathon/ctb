@@ -1,0 +1,7 @@
+# Ignore scans and photos of test papers
+scans/
+
+# Build & dependencies
+node_modules/
+dist/
+

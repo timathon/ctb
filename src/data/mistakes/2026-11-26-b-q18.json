@@ -1,0 +1,49 @@
+{
+  "id": "2026-11-26-b-q18",
+  "student": "jiangjh",
+  "date": "2026-11-26",
+  "grade": "七年级上",
+  "subject": "数学",
+  "source": "期中真题汇编卷(基础卷 2) · 第18题",
+  "chapter": "整式及其加减",
+  "title": "整式去括号化简（含分数系数）",
+  "question": "先化简，再求值：$\\frac{1}{2}x - 2\\left(x - \\frac{1}{3}y^2\\right) + \\left(-\\frac{3}{2}x + \\frac{1}{3}y^2\\right)$，其中 $x = -2$，$y = \\frac{2}{3}$（或按原题给定数值代入）。",
+  "wrong_answer": "去括号与合并同类项计算有误（化简结果未得出 $-3x+y^2$）",
+  "mistake": {
+    "type": "去括号漏乘/符号错误",
+    "description": "在展开 $-2(x - \\frac{1}{3}y^2)$ 时，负号与分数相乘出错，且合并 $y^2$ 项时系数计算有误（正确化简结果应为 $-3x + y^2$）。"
+  },
+  "answer_mode": "self_check",
+  "solution": {
+    "thinking_procedure": [
+      "1. 先去括号：注意 $-2$ 要乘以括号里的每一项，且负负得正：$-2 \\times (-\\frac{1}{3}y^2) = +\\frac{2}{3}y^2$。",
+      "2. 合并同类项：把含 $x$ 的项放一起，$\\frac{1}{2}x - 2x - \\frac{3}{2}x = -3x$；把含 $y^2$ 的项放一起，$\\frac{2}{3}y^2 + \\frac{1}{3}y^2 = y^2$。",
+      "3. 最后再代入数值求值。"
+    ],
+    "explanation": "原式 $= \\frac{1}{2}x - 2x + \\frac{2}{3}y^2 - \\frac{3}{2}x + \\frac{1}{3}y^2 = \\left(\\frac{1}{2} - 2 - \\frac{3}{2}\\right)x + \\left(\\frac{2}{3} + \\frac{1}{3}\\right)y^2 = -3x + y^2$。",
+    "answer": "化简结果：$-3x + y^2$"
+  },
+  "similar_questions": [
+    {
+      "id": "sim-b-q18-1",
+      "question": "化简整式：$3\\left(a^2 - \\frac{1}{3}b\\right) - 2\\left(a^2 - \\frac{1}{2}b\\right)$。",
+      "answer_mode": "short_answer",
+      "accepted_answers": ["a^2"],
+      "strategy_steps": [
+        {
+          "prompt": "第一步：去括号时，$-2\\left(a^2 - \\frac{1}{2}b\\right)$ 展开后是什么？",
+          "options": ["$-2a^2 + b$", "$-2a^2 - b$", "$-2a^2 + \\frac{1}{2}b$"],
+          "correct_index": 0,
+          "feedback": "$-2 \\times a^2 = -2a^2$，$-2 \\times (-\\frac{1}{2}b) = +b$。"
+        },
+        {
+          "prompt": "第二步：合并同类项后的最终结果是？",
+          "options": ["$a^2$", "$a^2 + 2b$", "$5a^2$"],
+          "correct_index": 0,
+          "feedback": "$(3a^2 - 2a^2) + (-b + b) = a^2$。"
+        }
+      ],
+      "answer": "$a^2$"
+    }
+  ]
+}
